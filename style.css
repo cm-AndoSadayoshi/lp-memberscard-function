@@ -311,47 +311,6 @@ h6 {
     color: var(--text-secondary);
 }
 
-/* Value Section */
-.value {
-    background: var(--surface-color);
-}
-
-.value-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-}
-
-.value-card {
-    background: white;
-    padding: 40px 30px;
-    border-radius: 24px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
-    border: 1px solid var(--border-color);
-}
-
-.value-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--accent-primary);
-}
-
-.value-icon {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.value-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 16px;
-}
-
-.value-card p {
-    color: var(--text-secondary);
-    line-height: 1.8;
-}
-
 /* Challenges Section */
 .challenges-grid {
     display: grid;
@@ -668,45 +627,6 @@ h6 {
     font-size: 0.95rem;
 }
 
-/* Considerations Section */
-.considerations {
-    background: var(--surface-color);
-}
-
-.considerations-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.consideration-card {
-    background: white;
-    padding: 40px;
-    border-radius: 24px;
-    border: 1px solid var(--border-color);
-    transition: all 0.3s ease;
-}
-
-.consideration-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-}
-
-.consideration-icon {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.consideration-card h3 {
-    font-size: 1.25rem;
-    margin-bottom: 16px;
-}
-
-.consideration-card p {
-    color: var(--text-secondary);
-    line-height: 1.8;
-}
-
 /* Footer */
 .footer {
     padding: 100px 0 40px;
@@ -779,10 +699,6 @@ h6 {
         transform: none;
     }
 
-    .value-grid {
-        grid-template-columns: 1fr;
-    }
-
     .challenges-grid {
         grid-template-columns: 1fr;
     }
@@ -800,10 +716,6 @@ h6 {
     }
 
     .flow-steps {
-        grid-template-columns: 1fr;
-    }
-
-    .considerations-grid {
         grid-template-columns: 1fr;
     }
 
