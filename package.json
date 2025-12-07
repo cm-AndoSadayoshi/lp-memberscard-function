@@ -1,0 +1,17 @@
+{
+    "name": "lp-memberscard-function",
+    "version": "1.0.0",
+    "description": "デジタル会員証 LP - グロースパック for LINE",
+    "scripts": {
+        "build": "mkdir -p public && cp index.html style.css script.js public/"
+    },
+    "keywords": [
+        "LINE",
+        "会員証",
+        "デジタル会員証",
+        "LINEミニアプリ"
+    ],
+    "author": "",
+    "license": "ISC"
+}
+
