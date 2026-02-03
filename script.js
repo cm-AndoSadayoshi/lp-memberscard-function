@@ -17,5 +17,17 @@ document.addEventListener('DOMContentLoaded', () => {
     revealElements.forEach(element => {
         revealObserver.observe(element);
     });
+
+    // デモボタンのデバイス判定
+    const demoBtn = document.getElementById('demo-btn');
+    if (demoBtn) {
+        demoBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            const baseUrl = 'https://prototype-memberscard-function.vercel.app';
+            const path = isMobile ? '/mini/scan' : '/demo/scan';
+            window.location.href = baseUrl + path;
+        });
+    }
 });
 
